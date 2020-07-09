@@ -33,3 +33,15 @@ then
 else
 	echo "entered email ids invalid";
 fi
+
+#validate the users mobile number
+echo "Enter the phone number"
+read phone;
+pattern2="^[1-9]{2} [ ]?[0-9]{10}$";
+if [[ $phone =~ $pattern2 ]]
+then 
+	echo "Entered number is valid";
+else
+	echo "entered number is invalid";
+fi
+
