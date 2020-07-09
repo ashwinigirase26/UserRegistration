@@ -12,3 +12,14 @@ else
 	echo "First name is invalid";
 fi
 
+#validates users last name
+echo "Enter your last name"
+read LastName;
+pattern="^[A-Z]{1}[a-z]{2,}$";
+if [[ $LatName =~ $pattern ]]
+then
+        echo "Last name is valid";
+else
+        echo "Last name is invalid";
+fi
+
